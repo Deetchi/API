@@ -38,7 +38,7 @@ router.post('/', async(req, res) => {
 
 router.patch('/:id', async(req, res) => {
     try {
-        const value = await tabelName.findById(req.params.id)
+        const value = await tableName.findById(req.params.id)
         value.sub = req.body.sub
         const a1 = await value.save()
         res.json(a1)
@@ -49,7 +49,7 @@ router.patch('/:id', async(req, res) => {
 
 router.delete('/:id', async(req, res) => {
     try {
-        const value = await tabelName.findById(req.params.id)
+        const value = await tableName.findById(req.params.id)
         value.sub = req.body.sub
         const a1 = await value.remove()
         res.json(a1)
