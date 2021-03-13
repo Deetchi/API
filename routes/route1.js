@@ -24,7 +24,8 @@ router.get('/:id', async(req, res) => {
 router.post('/', async(req, res) => {
     const values = new tableName({
         name: req.body.name,
-        age: req.body.age
+        age: req.body.age,
+        dob: req.body.dob
     })
 
     try {
