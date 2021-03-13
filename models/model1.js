@@ -10,6 +10,10 @@ const dbSchema = new mongoose.Schema({
     age: {
         type: Number,
         required: true
+    },
+    dob: {
+        type:String,
+        required: true
     }
 
 })
